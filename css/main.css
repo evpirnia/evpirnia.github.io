@@ -154,6 +154,15 @@
 		margin: 0 0 2rem 0;
 	}
 
+	p.col {
+		column-count: 3;
+	}
+
+	h3.sub {
+		border-left: 2px solid black;
+		padding-left: 2px;
+	}
+
 	h1 {
 		color: white;
 		font-weight: 600;
@@ -634,11 +643,27 @@
 			display: block;
 		}
 
+		.image.halfl {
+			max-width: 50%;
+			float: left;
+			top: 0.25em;
+			bottom: 0.25em;
+			padding-right: 15px;
+		}
+
+		.image.halfr {
+			max-width: 60%;
+			float: right;
+			top: 0.25em;
+			bottom: 0.25em;
+			padding-left: 15px;
+		}
+
 		.image.left, .image.right {
 			max-width: 40%;
 		}
 
-			.image.left img, .image.right img {
+			.image.left img, .image.right img, .image.halfl img, .image.halfr img {
 				width: 100%;
 			}
 
@@ -650,8 +675,8 @@
 
 		.image.right {
 			float: right;
-			padding-left: 15px;
 			top: 0.25em;
+			padding-left: 15px;
 		}
 
 		.image.fit {
